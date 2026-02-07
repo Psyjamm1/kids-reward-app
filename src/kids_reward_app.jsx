@@ -68,6 +68,11 @@ const LANG = {
     unlocked:"Unlocked!",
     locked:"Locked",
     progress:"Progress",
+    about:"About",
+    appVersion:"Version 1.0.0",
+    copyright:"© 2026 Burts Family Development. All rights reserved.",
+    madeWith:"Made with ❤️ for families",
+    developer:"Developer: Burts Family Development",
   },
   he: {
     appTitle:"תגמולי כוכבים", whoPlaying:"מי משחק היום?",
@@ -133,6 +138,11 @@ const LANG = {
     unlocked:"נפתח!",
     locked:"נעול",
     progress:"התקדמות",
+    about:"אודות",
+    appVersion:"גרסה 1.0.0",
+    copyright:"© 2026 Burts Family Development. All rights reserved.",
+    madeWith:"Made with ❤️ for families",
+    developer:"Developer: Burts Family Development",
   },
   ru: {
     appTitle:"Награды звёздочки", whoPlaying:"Кто играет сегодня?",
@@ -198,6 +208,11 @@ const LANG = {
     unlocked:"Разблокировано!",
     locked:"Заблокировано",
     progress:"Прогресс",
+    about:"О приложении",
+    appVersion:"Версия 1.0.0",
+    copyright:"© 2026 Burts Family Development. All rights reserved.",
+    madeWith:"Made with ❤️ for families",
+    developer:"Developer: Burts Family Development",
   },
 };
 
@@ -1464,6 +1479,18 @@ export default function App(){
       </div>
       {users.length===0&&<p style={{color:"#636e72",fontSize:18,textAlign:"center",marginTop:40}}>{t.noChildren}</p>}
       
+      {/* Footer with copyright */}
+      <div style={{
+        textAlign:"center",
+        marginTop:"auto",
+        paddingTop:40,
+        paddingBottom:20,
+        color:"rgba(0,0,0,0.3)",
+        fontSize:12
+      }}>
+        {t.copyright}
+      </div>
+      
       {/* Global overlays */}
       <AchievementNotification />
       <ToastNotification />
@@ -1670,6 +1697,19 @@ export default function App(){
           <p style={{color:"#636e72",fontSize:15,margin:0,lineHeight:1.7}}>
             • {t.howLine1}<br/>• {t.howLine2}<br/>• {t.howLine3}<br/>• {t.howLine4}<br/>• {t.howLine5}<br/>• {t.howLine6}
           </p>
+        </div>
+
+        {/* About & Copyright */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>ℹ️ {t.about}</h3>
+          <div style={{textAlign:"center",padding:"16px 0"}}>
+            <div style={{fontSize:48,marginBottom:12}}>⭐</div>
+            <div style={{fontSize:20,fontWeight:800,color:"#5f27cd",marginBottom:8}}>{t.appTitle}</div>
+            <div style={{fontSize:14,color:"#636e72",marginBottom:16}}>{t.appVersion}</div>
+            <div style={{fontSize:14,color:"#636e72",marginBottom:8}}>{t.madeWith}</div>
+            <div style={{fontSize:13,color:"#95a5a6",marginBottom:16}}>{t.developer}</div>
+            <div style={{fontSize:12,color:"#bdc3c7",borderTop:"1px solid #eee",paddingTop:16}}>{t.copyright}</div>
+          </div>
         </div>
       </>)}
 
