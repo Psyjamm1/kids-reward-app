@@ -140,9 +140,9 @@ const LANG = {
     progress:"התקדמות",
     about:"אודות",
     appVersion:"גרסה 1.0.0",
-    copyright:"© 2026 Burts Family Development. All rights reserved.",
-    madeWith:"Made with ❤️ for families",
-    developer:"Developer: Burts Family Development",
+    copyright:"© 2026 Burts Family Development. כל הזכויות שמורות.",
+    madeWith:"נעשה עם ❤️ עבור משפחות",
+    developer:"מפתח: Burts Family Development",
   },
   ru: {
     appTitle:"Награды звёздочки", whoPlaying:"Кто играет сегодня?",
@@ -210,9 +210,9 @@ const LANG = {
     progress:"Прогресс",
     about:"О приложении",
     appVersion:"Версия 1.0.0",
-    copyright:"© 2026 Burts Family Development. All rights reserved.",
-    madeWith:"Made with ❤️ for families",
-    developer:"Developer: Burts Family Development",
+    copyright:"© 2026 Burts Family Development. Все права защищены.",
+    madeWith:"Создано с ❤️ для семей",
+    developer:"Разработчик: Burts Family Development",
   },
 };
 
@@ -276,6 +276,7 @@ function FlyingStars({count,startX,startY,onDone,totalStars}){
   };
   
   const starColor = getStarColor(count);
+  const hasPlayedSound = useRef(false); // Prevent double-play
   
   const stars=Array.from({length:count},(_,i)=>({
     id:i,
@@ -284,32 +285,58 @@ function FlyingStars({count,startX,startY,onDone,totalStars}){
     rotation:Math.random()*360
   }));
   
-  // Play sound when stars land
+  // Play coin drop sound when stars land
   useEffect(()=>{
-    const playLandSound = ()=>{
+    if (hasPlayedSound.current) return; // Already played
+    hasPlayedSound.current = true;
+    
+    const playCoinSound = ()=>{
       try {
-        // Create a simple beep sound using Web Audio API
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        const oscillator = audioContext.createOscillator();
-        const gainNode = audioContext.createGain();
         
-        oscillator.connect(gainNode);
-        gainNode.connect(audioContext.destination);
+        // Create realistic coin drop sound
+        const playOneCoin = (delay) => {
+          setTimeout(() => {
+            // Two oscillators for rich metallic sound
+            const osc1 = audioContext.createOscillator();
+            const osc2 = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            osc1.connect(gainNode);
+            osc2.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            // Coin frequencies - creates that metallic "plink" sound
+            osc1.frequency.value = 2000; // High frequency for brightness
+            osc2.frequency.value = 2400; // Harmonic for richness
+            osc1.type = 'square';  // Square wave for metallic character
+            osc2.type = 'square';
+            
+            const now = audioContext.currentTime;
+            
+            // Very short, sharp sound like a coin hitting surface
+            gainNode.gain.setValueAtTime(0, now);
+            gainNode.gain.linearRampToValueAtTime(0.2, now + 0.005); // Quick attack
+            gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.08); // Fast decay
+            
+            osc1.start(now);
+            osc2.start(now);
+            osc1.stop(now + 0.08);
+            osc2.stop(now + 0.08);
+          }, delay);
+        };
         
-        oscillator.frequency.value = 800 + (count * 50); // Higher pitch for more stars
-        oscillator.type = 'sine';
+        // Drop coins with cascading effect
+        for (let i = 0; i < Math.min(count, 6); i++) {
+          playOneCoin(i * 70); // 70ms between each coin
+        }
         
-        gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
-        
-        oscillator.start(audioContext.currentTime);
-        oscillator.stop(audioContext.currentTime + 0.1);
       } catch(e) {
-        // Silently fail if audio not supported
+        console.log('Audio not supported');
       }
     };
     
-    const soundTimer = setTimeout(playLandSound, 650 + count*120);
+    const soundTimer = setTimeout(playCoinSound, 650);
     const doneTimer = setTimeout(onDone, 900+count*120);
     
     return ()=>{
@@ -1375,6 +1402,59 @@ export default function App(){
   /* ── GLOBAL UI OVERLAYS ── */
   const AchievementNotification = () => {
     if (!achievementNotif) return null;
+    
+    // Play victory fanfare sound
+    useEffect(() => {
+      const playFanfare = () => {
+        try {
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          
+          // Victory fanfare - "Ta-ra-am!" sound
+          const playNote = (frequency, startTime, duration, volume = 0.15) => {
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioContext.destination);
+            
+            osc.frequency.value = frequency;
+            osc.type = 'triangle'; // Warmer sound than square
+            
+            gain.gain.setValueAtTime(0, startTime);
+            gain.gain.linearRampToValueAtTime(volume, startTime + 0.01);
+            gain.gain.exponentialRampToValueAtTime(0.01, startTime + duration);
+            
+            osc.start(startTime);
+            osc.stop(startTime + duration);
+          };
+          
+          const now = audioContext.currentTime;
+          
+          // Classic "Ta-ra-am!" fanfare melody
+          // First chord - "Ta"
+          playNote(523, now, 0.3, 0.12);        // C
+          playNote(659, now, 0.3, 0.12);        // E
+          playNote(784, now, 0.3, 0.12);        // G
+          
+          // Second chord - "ra" (higher)
+          playNote(659, now + 0.15, 0.3, 0.12); // E
+          playNote(784, now + 0.15, 0.3, 0.12); // G
+          playNote(988, now + 0.15, 0.3, 0.12); // B
+          
+          // Final chord - "am!" (triumphant)
+          playNote(523, now + 0.3, 0.6, 0.15);  // C
+          playNote(659, now + 0.3, 0.6, 0.15);  // E
+          playNote(784, now + 0.3, 0.6, 0.15);  // G
+          playNote(1047, now + 0.3, 0.6, 0.18); // High C (emphasis)
+          
+        } catch(e) {
+          console.log('Audio not supported');
+        }
+      };
+      
+      playFanfare();
+    }, []);
+    
     return (
       <div style={{
         position: "fixed",
