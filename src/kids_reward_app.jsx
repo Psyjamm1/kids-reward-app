@@ -23,7 +23,7 @@ const LANG = {
     howLine3:"Kids spend stars in the Shop",
     howLine4:"Tap ✏️ to edit any task or shop item",
     howLine5:"Tap ⚠️ to deduct stars (password protected)",
-    howLine6:"Password: admin",
+    howLine6:"Default password: admin (change in Settings)",
     parentPassword:"Parent Password", enterPassword:"Enter password to continue", confirm:"Confirm", cancel:"Cancel",
     parentApproval:"Parent Approval", approveQ:(t,s)=>`Approve "${t}" for +${s} ⭐?`,
     wrongPassword:"Wrong password ✕",
@@ -37,6 +37,37 @@ const LANG = {
     unsavedTitle:"Unsaved Changes",
     unsavedMsg:"You have changes that are not saved. Do you want to save before leaving?",
     save:"Save", discard:"Discard",
+    changePassword:"Change Password",
+    currentPassword:"Current Password",
+    newPassword:"New Password",
+    confirmPassword:"Confirm New Password",
+    updatePassword:"Update Password",
+    passwordMismatch:"Passwords don't match",
+    passwordChanged:"Password changed successfully!",
+    wrongCurrentPassword:"Current password is incorrect",
+    general:"General",
+    childrenTab:"Children",
+    tasksTab:"Tasks",
+    shopTab:"Shop",
+    security:"Security",
+    canAfford:"Can afford!",
+    needMore:"Need {X} more ⭐",
+    confirmDelete:"Are you sure?",
+    confirmPurchase:"Purchase for {X} ⭐?",
+    success:"Success!",
+    undo:"Undo",
+    undoLastAction:"Undo last action",
+    actionUndone:"Action undone!",
+    noUndo:"Nothing to undo",
+    achievements:"Achievements",
+    badge_firstTask:"First Task",
+    badge_10tasks:"10 Tasks",
+    badge_50stars:"50 Stars",
+    badge_perfectWeek:"Perfect Week",
+    badge_superSaver:"Super Saver",
+    unlocked:"Unlocked!",
+    locked:"Locked",
+    progress:"Progress",
   },
   he: {
     appTitle:"תגמולי כוכבים", whoPlaying:"מי משחק היום?",
@@ -57,7 +88,7 @@ const LANG = {
     howLine3:"הילדים הוצאו כוכבים בחנות",
     howLine4:"לחץ ✏️ לעריכת משמרת או מוצר",
     howLine5:"לחץ ⚠️ להפחתת כוכבים (מוגן סיסמה)",
-    howLine6:"סיסמה: admin",
+    howLine6:"סיסמה ברירת מחדל: admin (שנה בהגדרות)",
     parentPassword:"סיסמת הורה", enterPassword:"הכנס סיסמה להמשיך", confirm:"אשור", cancel:"בטל",
     parentApproval:"אישור הורה", approveQ:(t,s)=>`אשור "${t}" ל +${s} ⭐?`,
     wrongPassword:"סיסמה שגיאה ✕",
@@ -71,6 +102,37 @@ const LANG = {
     unsavedTitle:"שינויים לא נשמעו",
     unsavedMsg:"יש שינויים שלא נשמעו. אתה רוצה לשמור לפני שתיצא?",
     save:"שמור", discard:"תשכוח",
+    changePassword:"שינוי סיסמה",
+    currentPassword:"סיסמה נוכחית",
+    newPassword:"סיסמה חדשה",
+    confirmPassword:"אשר סיסמה חדשה",
+    updatePassword:"עדכן סיסמה",
+    passwordMismatch:"הסיסמאות לא תואמות",
+    passwordChanged:"הסיסמה שונתה בהצלחה!",
+    wrongCurrentPassword:"הסיסמה הנוכחית שגויה",
+    general:"כללי",
+    childrenTab:"ילדים",
+    tasksTab:"משמרתות",
+    shopTab:"חנות",
+    security:"אבטחה",
+    canAfford:"יכול להרשות!",
+    needMore:"צריך עוד {X} ⭐",
+    confirmDelete:"אתה בטוח?",
+    confirmPurchase:"קנה ב {X} ⭐?",
+    success:"הצלחה!",
+    undo:"בטל",
+    undoLastAction:"בטל פעולה אחרונה",
+    actionUndone:"הפעולה בוטלה!",
+    noUndo:"אין מה לבטל",
+    achievements:"הישגים",
+    badge_firstTask:"משימה ראשונה",
+    badge_10tasks:"10 משימות",
+    badge_50stars:"50 כוכבים",
+    badge_perfectWeek:"שבוע מושלם",
+    badge_superSaver:"חוסך על",
+    unlocked:"נפתח!",
+    locked:"נעול",
+    progress:"התקדמות",
   },
   ru: {
     appTitle:"Награды звёздочки", whoPlaying:"Кто играет сегодня?",
@@ -91,7 +153,7 @@ const LANG = {
     howLine3:"Дети тратят звёздочки в магазине",
     howLine4:"Нажми ✏️ чтобы редактировать задание или товар",
     howLine5:"Нажми ⚠️ для снятия звёздочек (защита паролем)",
-    howLine6:"Пароль: admin",
+    howLine6:"Пароль по умолчанию: admin (измените в Настройках)",
     parentPassword:"Пароль родителя", enterPassword:"Введите пароль для продолжения", confirm:"Подтвердить", cancel:"Отмена",
     parentApproval:"Утверждение родителя", approveQ:(t,s)=>`Утвердить "${t}" за +${s} ⭐?`,
     wrongPassword:"Неверный пароль ✕",
@@ -105,6 +167,37 @@ const LANG = {
     unsavedTitle:"Несохранённые изменения",
     unsavedMsg:"Есть изменения которые не сохранены. Хотите сохранить перед выходом?",
     save:"Сохранить", discard:"Отменить",
+    changePassword:"Сменить пароль",
+    currentPassword:"Текущий пароль",
+    newPassword:"Новый пароль",
+    confirmPassword:"Подтвердите пароль",
+    updatePassword:"Обновить пароль",
+    passwordMismatch:"Пароли не совпадают",
+    passwordChanged:"Пароль успешно изменён!",
+    wrongCurrentPassword:"Текущий пароль неверен",
+    general:"Общие",
+    childrenTab:"Дети",
+    tasksTab:"Задания",
+    shopTab:"Магазин",
+    security:"Безопасность",
+    canAfford:"Хватает!",
+    needMore:"Нужно ещё {X} ⭐",
+    confirmDelete:"Вы уверены?",
+    confirmPurchase:"Купить за {X} ⭐?",
+    success:"Успех!",
+    undo:"Отменить",
+    undoLastAction:"Отменить последнее действие",
+    actionUndone:"Действие отменено!",
+    noUndo:"Нечего отменять",
+    achievements:"Достижения",
+    badge_firstTask:"Первое задание",
+    badge_10tasks:"10 заданий",
+    badge_50stars:"50 звёздочек",
+    badge_perfectWeek:"Идеальная неделя",
+    badge_superSaver:"Супер копилка",
+    unlocked:"Разблокировано!",
+    locked:"Заблокировано",
+    progress:"Прогресс",
   },
 };
 
@@ -137,6 +230,15 @@ const PENALTY_REASONS = [
   {id:"screen_time",label:"Too much screen time",stars:2,icon:"📱"},
   {id:"rude",label:"Was rude",stars:3,icon:"😤"},
 ];
+
+// Achievement Definitions
+const ACHIEVEMENTS = [
+  {id:"firstTask",name:"badge_firstTask",icon:"🌟",check:(c)=>(c.totalTasksCompleted||0)>=1},
+  {id:"10tasks",name:"badge_10tasks",icon:"💪",check:(c)=>(c.totalTasksCompleted||0)>=10},
+  {id:"50stars",name:"badge_50stars",icon:"⭐",check:(c)=>(c.totalStarsEarned||0)>=50},
+  {id:"perfectWeek",name:"badge_perfectWeek",icon:"🏆",check:(c)=>(c.perfectWeekCount||0)>=1},
+  {id:"superSaver",name:"badge_superSaver",icon:"💰",check:(c)=>(c.stars||0)>=100},
+];
 const AVATARS  = ["🧒","👦","👧","🧑","👨","👩","🦸","🦹","🧙","🧚","🧜","🧝","🐶","🐱","🦄","🐉","🦊","🐼","🐨","🐸"];
 const ICONS    = ["🏠","🌳","😊","🤝","📚","🥦","🛏️","🏃","🧹","🐶","🐱","🎨","🎵","⚽","🚲","🌸","🧼","🍎","🌞","💪","🎭","🏆","🌈","⭐","🎪","🧺","🍳","🌻","🎲","🏋️","🏊","🎬","🎁","🍦","🏕️","📺","🍕","🎠","🧸","🎯"];
 const STAR_OPTS = [1,2,3,4,5,6,7,8,9,10,12,15,20];
@@ -149,6 +251,181 @@ function StarBurst({count,onDone}){
   useEffect(()=>{const t=setTimeout(onDone,1100);return()=>clearTimeout(t);},[onDone]);
   return(<><style>{`@keyframes starPop{0%{opacity:1;transform:translate(0,0) scale(.2)}50%{opacity:1}100%{opacity:0;transform:translate(var(--tx),var(--ty)) scale(1.3)}}`}</style><div style={{position:"fixed",inset:0,pointerEvents:"none",zIndex:999,display:"flex",alignItems:"center",justifyContent:"center"}}>{items.map(s=><div key={s.id} style={{position:"absolute",fontSize:s.size,opacity:0,"--tx":`${s.x}px`,"--ty":`${s.y}px`,animation:`starPop .95s cubic-bezier(.2,.8,.3,1) ${s.delay}s forwards`}}>⭐</div>)}</div></>);
 }
+
+function FlyingStars({count,startX,startY,onDone,totalStars}){
+  // Determine star color based on amount
+  const getStarColor = (count) => {
+    if(count >= 10) return '#FFD700'; // Gold for 10+
+    if(count >= 5) return '#FF6B6B'; // Red/Pink for 5-9
+    return '#FFA500'; // Orange for 1-4
+  };
+  
+  const starColor = getStarColor(count);
+  
+  const stars=Array.from({length:count},(_,i)=>({
+    id:i,
+    delay:i*0.12,
+    offset:Math.random()*30-15,
+    rotation:Math.random()*360
+  }));
+  
+  // Play sound when stars land
+  useEffect(()=>{
+    const playLandSound = ()=>{
+      try {
+        // Create a simple beep sound using Web Audio API
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.value = 800 + (count * 50); // Higher pitch for more stars
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+        
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.1);
+      } catch(e) {
+        // Silently fail if audio not supported
+      }
+    };
+    
+    const soundTimer = setTimeout(playLandSound, 650 + count*120);
+    const doneTimer = setTimeout(onDone, 900+count*120);
+    
+    return ()=>{
+      clearTimeout(soundTimer);
+      clearTimeout(doneTimer);
+    };
+  },[onDone,count]);
+  
+  return(<>
+    <style>{`
+      @keyframes flyToCounter {
+        0% {
+          transform: translate(0, 0) scale(0.5) rotate(var(--startRot));
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+          transform: translate(0, 0) scale(1.2) rotate(var(--startRot));
+        }
+        30% {
+          transform: translate(calc(var(--endX) * 0.3), calc(var(--endY) * 0.2)) scale(1.3) rotate(calc(var(--startRot) + 90deg));
+        }
+        85% {
+          transform: translate(var(--endX), var(--endY)) scale(0.8) rotate(calc(var(--startRot) + 360deg));
+          opacity: 1;
+        }
+        92% {
+          transform: translate(var(--endX), calc(var(--endY) - 10px)) scale(1.1) rotate(calc(var(--startRot) + 380deg));
+        }
+        100% {
+          transform: translate(var(--endX), var(--endY)) scale(0.7) rotate(calc(var(--startRot) + 360deg));
+          opacity: 0.9;
+        }
+      }
+      
+      @keyframes starTrail {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 0.6; }
+      }
+    `}</style>
+    <div style={{position:"fixed",inset:0,pointerEvents:"none",zIndex:1000}}>
+      {stars.map(s=>(
+        <div key={s.id}>
+          {/* Main star */}
+          <div 
+            style={{
+              position:"absolute",
+              left:startX,
+              top:startY,
+              fontSize:32,
+              opacity:0,
+              filter:`drop-shadow(0 0 8px ${starColor})`,
+              "--endX":`calc(100vw - 100px + ${s.offset}px)`,
+              "--endY":`calc(-${startY}px + 60px + ${s.offset*0.5}px)`,
+              "--startRot":`${s.rotation}deg`,
+              animation:`flyToCounter 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) ${s.delay}s forwards`
+            }}
+          >
+            <span style={{color:starColor,textShadow:`0 0 10px ${starColor}`}}>⭐</span>
+          </div>
+          
+          {/* Trail effect */}
+          {[0,1,2].map(t=>(
+            <div 
+              key={`trail-${s.id}-${t}`}
+              style={{
+                position:"absolute",
+                left:startX,
+                top:startY,
+                fontSize:24-t*4,
+                opacity:0,
+                "--endX":`calc(100vw - 100px + ${s.offset}px)`,
+                "--endY":`calc(-${startY}px + 60px + ${s.offset*0.5}px)`,
+                "--startRot":`${s.rotation}deg`,
+                animation:`flyToCounter 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) ${s.delay + t*0.05}s forwards, starTrail 0.4s ease ${s.delay + t*0.05}s`
+              }}
+            >
+              <span style={{color:starColor,opacity:0.5-t*0.15}}>✨</span>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  </>);
+}
+
+function MilestoneCelebration({milestone,onDone}){
+  useEffect(()=>{const t=setTimeout(onDone,3000);return()=>clearTimeout(t);},[onDone]);
+  
+  return(<>
+    <style>{`
+      @keyframes milestoneZoom {
+        0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+        50% { transform: scale(1.3) rotate(10deg); opacity: 1; }
+        70% { transform: scale(0.9) rotate(-5deg); }
+        100% { transform: scale(1) rotate(0deg); opacity: 1; }
+      }
+      @keyframes milestoneFade {
+        0%, 70% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    `}</style>
+    <div style={{
+      position:"fixed",
+      inset:0,
+      background:"rgba(0,0,0,0.4)",
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center",
+      zIndex:1002,
+      animation:"milestoneFade 3s ease forwards"
+    }}>
+      <div style={{
+        background:"linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        borderRadius:30,
+        padding:"40px 50px",
+        boxShadow:"0 20px 60px rgba(0,0,0,0.4)",
+        animation:"milestoneZoom 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards"
+      }}>
+        <div style={{fontSize:80,textAlign:"center",marginBottom:10}}>🎉</div>
+        <div style={{fontSize:32,fontWeight:900,color:"#fff",textAlign:"center",marginBottom:8}}>
+          {milestone} Stars!
+        </div>
+        <div style={{fontSize:18,color:"rgba(255,255,255,0.9)",textAlign:"center",fontWeight:600}}>
+          Amazing achievement!
+        </div>
+      </div>
+    </div>
+  </>);
+}
+
 function RedFlash({onDone}){
   useEffect(()=>{const t=setTimeout(onDone,580);return()=>clearTimeout(t);},[onDone]);
   return(<><style>{`@keyframes rF{0%{opacity:1}100%{opacity:0}}`}</style><div style={{position:"fixed",inset:0,background:"rgba(220,0,0,.25)",zIndex:998,pointerEvents:"none",animation:"rF .58s ease-out forwards"}}/></>);
@@ -166,11 +443,11 @@ function SavedToast({msg,onDone}){
 /* ═══════════════════════════════════════════════════════════════════════════
    MODALS
    ═══════════════════════════════════════════════════════════════════════════ */
-function PasswordModal({title,subtitle,icon,btnConfirm,btnCancel,onSuccess,onCancel}){
+function PasswordModal({title,subtitle,icon,btnConfirm,btnCancel,onSuccess,onCancel,password="admin"}){
   const [pw,setPw]=useState("");
   const [error,setError]=useState(false);
   const attempt=()=>{
-    if(pw==="admin") return onSuccess();
+    if(pw===password) return onSuccess();
     setError(true); setPw(""); setTimeout(()=>setError(false),1200);
   };
   return(<div style={S.overlay}><div style={S.modal}>
@@ -186,14 +463,14 @@ function PasswordModal({title,subtitle,icon,btnConfirm,btnCancel,onSuccess,onCan
   </div></div>);
 }
 
-function ConfirmModal({title,message,onYes,onNo,yesLabel="Delete",noLabel="Cancel"}){
+function ConfirmModal({title,message,onYes,onNo,yesLabel="Delete",noLabel="Cancel",icon="⚠️"}){
   return(<div style={S.overlay}><div style={S.modal}>
-    <div style={{fontSize:46,marginBottom:6}}>⚠️</div>
+    <div style={{fontSize:46,marginBottom:6}}>{icon}</div>
     <h2 style={S.modalTitle}>{title}</h2>
     <p style={S.modalSub}>{message}</p>
     <div style={S.modalBtns}>
       <button onClick={onNo}  style={S.btnGrey}>{noLabel}</button>
-      <button onClick={onYes} style={{...S.btnPurple,background:"#e03131"}}>{yesLabel}</button>
+      <button onClick={onYes} style={{...S.btnPurple,background:icon==="🛍️"?"#00b894":"#e03131"}}>{yesLabel}</button>
     </div>
   </div></div>);
 }
@@ -210,6 +487,80 @@ function UnsavedModal({title,message,onSave,onDiscard,onCancel,t}){
       <button onClick={onCancel}  style={{...S.btnGrey,flex:"none",padding:"12px 0",borderRadius:14,border:"none",fontSize:17}}>{t.cancel}</button>
     </div>
   </div></div>);
+}
+
+function PasswordChangeModal({currentPassword, onSuccess, onCancel, t}) {
+  const [currentPw, setCurrentPw] = useState("");
+  const [newPw, setNewPw] = useState("");
+  const [confirmPw, setConfirmPw] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = () => {
+    // Validate current password
+    if (currentPw !== currentPassword) {
+      setError(t.wrongCurrentPassword);
+      setTimeout(() => setError(""), 2000);
+      return;
+    }
+    
+    // Validate new password
+    if (!newPw.trim()) {
+      setError("Password cannot be empty");
+      setTimeout(() => setError(""), 2000);
+      return;
+    }
+    
+    // Validate passwords match
+    if (newPw !== confirmPw) {
+      setError(t.passwordMismatch);
+      setTimeout(() => setError(""), 2000);
+      return;
+    }
+
+    onSuccess(newPw);
+  };
+
+  return (
+    <div style={S.overlay}>
+      <div style={S.modal}>
+        <div style={{fontSize:52,marginBottom:6}}>🔐</div>
+        <h2 style={S.modalTitle}>{t.changePassword}</h2>
+        
+        <input 
+          autoFocus 
+          type="password" 
+          placeholder={t.currentPassword}
+          value={currentPw} 
+          onChange={e => setCurrentPw(e.target.value)} 
+          style={{...S.pwInput, marginBottom: 12, fontSize: 16, letterSpacing: 1}}
+        />
+        
+        <input 
+          type="password" 
+          placeholder={t.newPassword}
+          value={newPw} 
+          onChange={e => setNewPw(e.target.value)} 
+          style={{...S.pwInput, marginBottom: 12, fontSize: 16, letterSpacing: 1}}
+        />
+        
+        <input 
+          type="password" 
+          placeholder={t.confirmPassword}
+          value={confirmPw} 
+          onChange={e => setConfirmPw(e.target.value)}
+          onKeyDown={e => e.key === "Enter" && handleSubmit()}
+          style={{...S.pwInput, fontSize: 16, letterSpacing: 1}}
+        />
+        
+        {error && <p style={S.pwError}>{error}</p>}
+        
+        <div style={S.modalBtns}>
+          <button onClick={onCancel} style={S.btnGrey}>{t.cancel}</button>
+          <button onClick={handleSubmit} style={S.btnPurple}>{t.updatePassword}</button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 /* ─── Live camera (full-screen, getUserMedia) ─── */
@@ -378,17 +729,37 @@ function ItemEditor({item,labelPlaceholder,onSave,onCancel,t}){
    APP
    ═══════════════════════════════════════════════════════════════════════════ */
 export default function App(){
+  /* Global CSS animations */
+  const GlobalStyles = () => (
+    <style>{`
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes bounce { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+      @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+      @keyframes starPop { 0% { transform: scale(0) rotate(0deg); opacity: 0; } 50% { transform: scale(1.2) rotate(180deg); } 100% { transform: scale(1) rotate(360deg); opacity: 1; } }
+      
+      * { transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+      button:active { transform: scale(0.95); }
+      button:disabled { transform: none !important; }
+    `}</style>
+  );
+  
   /* ── lang ── */
   const [lang,setLang] = useState("en");
   const t = LANG[lang] || LANG.en; // Fallback to English if lang is invalid
 
+  /* ── password ── */
+  const [password, setPassword] = useState("admin");
+
   /* ── committed (persisted) state ── */
-  const [users,setUsers]           = useState([{id:"nikita",name:"Nikita",avatar:"🧒"}]);
+  const [users,setUsers]           = useState([]);
   const [tasks,setTasks]           = useState(DEFAULT_TASKS);
   const [shopItems,setShopItems]   = useState(DEFAULT_SHOP);
   const [stars,setStars]           = useState({});
   const [history,setHistory]       = useState({});
   const [purchases,setPurchases]   = useState({});
+  const [undoStack,setUndoStack]   = useState([]); // For undo functionality
 
   /* ── draft state (only written to storage on Save) ── */
   const [draftUsers,setDraftUsers] = useState(null);  // null = not in settings
@@ -398,6 +769,7 @@ export default function App(){
   /* ── screen ── */
   const [screen,setScreen]         = useState("users");
   const [activeUser,setActiveUser] = useState(null);
+  const [settingsTab, setSettingsTab] = useState("general"); // general, children, tasks, shop, security
 
   /* ── UI ── */
   const [pwModal,setPwModal]       = useState(false);
@@ -410,6 +782,12 @@ export default function App(){
   const [showSaved,setShowSaved]   = useState(false);
   const [pendingTask,setPendingTask]= useState(null);
   const [avatarModal,setAvatarModal]= useState(null); // user id whose avatar is being edited
+  const [showPasswordChange, setShowPasswordChange] = useState(false);
+  const [showLangMenu, setShowLangMenu] = useState(false);
+  const [flyingStars, setFlyingStars] = useState(null); // {count, startX, startY}
+  const [milestone, setMilestone] = useState(null); // Show milestone celebration
+  const [achievementNotif, setAchievementNotif] = useState(null); // Achievement unlock notification
+  const [toastMsg, setToastMsg] = useState(null); // Toast messages
 
   /* ── unsaved-changes warning ── */
   const [showUnsaved,setShowUnsaved] = useState(false);
@@ -429,15 +807,12 @@ export default function App(){
   /* ── LOAD ── */
   useEffect(() => {
     (async () => {
-      // Helper function to load from either storage
+      // Helper function to load from storage
       const loadData = async (key, setter, parse = false) => {
         try {
           if (window.storage) {
             const r = await window.storage.get(key);
             if (r) setter(parse ? JSON.parse(r.value) : r.value);
-          } else {
-            const saved = localStorage.getItem(key);
-            if (saved) setter(parse ? JSON.parse(saved) : saved);
           }
         } catch (e) {
           console.error(`Failed to load ${key}`, e);
@@ -449,17 +824,12 @@ export default function App(){
         if (window.storage) {
           const r = await window.storage.get("ra_lang");
           if (r && LANG[r.value]) setLang(r.value); // Only set if valid language
-        } else {
-          const saved = localStorage.getItem("ra_lang");
-          if (saved) {
-            const parsed = JSON.parse(saved);
-            if (LANG[parsed]) setLang(parsed); // Only set if valid language
-          }
         }
       } catch (e) {
         console.error("Failed to load language", e);
       }
 
+      await loadData("ra_password", setPassword); // Load password
       await loadData("ra_users", setUsers, true);
       await loadData("ra_tasks", setTasks, true);
       await loadData("ra_shop", setShopItems, true);
@@ -474,47 +844,29 @@ export default function App(){
   useEffect(() => {
     if (window.storage) {
       window.storage.set("ra_lang", lang).catch(() => {});
-    } else {
-      try {
-        localStorage.setItem("ra_lang", JSON.stringify(lang));
-      } catch (e) {
-        console.error("Failed to save language", e);
-      }
     }
   }, [lang]);
   useEffect(() => {
     if (window.storage) {
       window.storage.set("ra_stars", JSON.stringify(stars)).catch(() => {});
-    } else {
-      try {
-        localStorage.setItem("ra_stars", JSON.stringify(stars));
-      } catch (e) {
-        console.error("Failed to save stars", e);
-      }
     }
   }, [stars]);
   useEffect(() => {
     if (window.storage) {
       window.storage.set("ra_hist", JSON.stringify(history)).catch(() => {});
-    } else {
-      try {
-        localStorage.setItem("ra_hist", JSON.stringify(history));
-      } catch (e) {
-        console.error("Failed to save history", e);
-      }
     }
   }, [history]);
   useEffect(() => {
     if (window.storage) {
       window.storage.set("ra_purch", JSON.stringify(purchases)).catch(() => {});
-    } else {
-      try {
-        localStorage.setItem("ra_purch", JSON.stringify(purchases));
-      } catch (e) {
-        console.error("Failed to save purchases", e);
-      }
     }
   }, [purchases]);
+
+  useEffect(() => {
+    if (window.storage) {
+      window.storage.set("ra_password", password).catch(() => {});
+    }
+  }, [password]);
 
   /* ── settings lifecycle ── */
   const enterSettings = ()=>{
@@ -543,6 +895,111 @@ export default function App(){
     setShowUnsaved(false);
     setScreen("users");
   };
+  /* ── HELPER FUNCTIONS ── */
+  
+  // Show toast notification
+  const showToast = (msg) => {
+    setToastMsg(msg);
+    setTimeout(() => setToastMsg(null), 2000);
+  };
+  
+  // Check for new achievements
+  const checkAchievements = (userId) => {
+    const user = users.find(u => u.id === userId);
+    if (!user) return;
+    
+    const userStars = stars[userId] || 0;
+    const userHist = history[userId] || [];
+    const userPurch = purchases[userId] || [];
+    
+    // Calculate stats
+    const totalTasksCompleted = userHist.length;
+    const totalStarsEarned = userHist.reduce((sum, h) => sum + h.stars, 0);
+    
+    // Check perfect week (7 tasks in last 7 days with unique dates)
+    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    const recentTasks = userHist.filter(h => h.timestamp > sevenDaysAgo);
+    const uniqueDays = new Set(recentTasks.map(h => new Date(h.timestamp).toDateString()));
+    const perfectWeekCount = uniqueDays.size >= 7 ? 1 : 0;
+    
+    // Check each achievement
+    const childData = {
+      stars: userStars,
+      totalTasksCompleted,
+      totalStarsEarned,
+      perfectWeekCount
+    };
+    
+    ACHIEVEMENTS.forEach(ach => {
+      const alreadyUnlocked = user.achievements?.includes(ach.id);
+      if (!alreadyUnlocked && ach.check(childData)) {
+        // Unlock achievement!
+        const updated = users.map(u => {
+          if (u.id === userId) {
+            return { ...u, achievements: [...(u.achievements || []), ach.id] };
+          }
+          return u;
+        });
+        setUsers(updated);
+        
+        // Show notification
+        setAchievementNotif({ ...ach, name: t[ach.name] });
+        setTimeout(() => setAchievementNotif(null), 3500);
+      }
+    });
+  };
+  
+  // Push to undo stack
+  const pushUndo = (action) => {
+    setUndoStack(prev => [...prev.slice(-9), action]); // Keep last 10
+  };
+  
+  // Perform undo
+  const performUndo = () => {
+    if (undoStack.length === 0) {
+      showToast(t.noUndo);
+      return;
+    }
+    
+    const lastAction = undoStack[undoStack.length - 1];
+    setUndoStack(prev => prev.slice(0, -1));
+    
+    if (lastAction.type === "task") {
+      // Undo task completion
+      setStars(prev => ({
+        ...prev,
+        [lastAction.userId]: (prev[lastAction.userId] || 0) - lastAction.stars
+      }));
+      setHistory(prev => ({
+        ...prev,
+        [lastAction.userId]: (prev[lastAction.userId] || []).filter(h => h.id !== lastAction.histId)
+      }));
+      showToast(t.actionUndone);
+    } else if (lastAction.type === "purchase") {
+      // Undo purchase
+      setStars(prev => ({
+        ...prev,
+        [lastAction.userId]: (prev[lastAction.userId] || 0) + lastAction.stars
+      }));
+      setPurchases(prev => ({
+        ...prev,
+        [lastAction.userId]: (prev[lastAction.userId] || []).filter(p => p.id !== lastAction.purchId)
+      }));
+      showToast(t.actionUndone);
+    } else if (lastAction.type === "penalty") {
+      // Undo penalty
+      setStars(prev => ({
+        ...prev,
+        [lastAction.userId]: (prev[lastAction.userId] || 0) + lastAction.stars
+      }));
+      setHistory(prev => ({
+        ...prev,
+        [lastAction.userId]: (prev[lastAction.userId] || []).filter(h => h.id !== lastAction.histId)
+      }));
+      showToast(t.actionUndone);
+    }
+  };
+
   const commitSettings = () => {
     setUsers(draftUsers);
     setTasks(draftTasks);
@@ -552,14 +1009,6 @@ export default function App(){
       window.storage.set("ra_users", JSON.stringify(draftUsers)).catch(() => {});
       window.storage.set("ra_tasks", JSON.stringify(draftTasks)).catch(() => {});
       window.storage.set("ra_shop", JSON.stringify(draftShop)).catch(() => {});
-    } else {
-      try {
-        localStorage.setItem("ra_users", JSON.stringify(draftUsers));
-        localStorage.setItem("ra_tasks", JSON.stringify(draftTasks));
-        localStorage.setItem("ra_shop", JSON.stringify(draftShop));
-      } catch (e) {
-        console.error("Failed to save settings", e);
-      }
     }
     
     setShowSaved(true);
@@ -572,25 +1021,107 @@ export default function App(){
 
   /* ── game actions ── */
   const openProtected = (target)=>{ setPwTarget(target); setPwModal(true); };
-  const requestTask   = (task)=>  { setPendingTask(task); setPwTarget("approve"); setPwModal(true); };
+  const requestTask   = (task, event)=>  { 
+    if(event){
+      // Store click position for flying stars animation
+      task.clickX = event.clientX;
+      task.clickY = event.clientY;
+    }
+    setPendingTask(task); 
+    setPwTarget("approve"); 
+    setPwModal(true); 
+  };
 
   const approveTask = ()=>{
     if(!pendingTask||!activeUser) return;
-    setStars(p=>({...p,[activeUser.id]:(p[activeUser.id]||0)+pendingTask.stars}));
-    setHistory(p=>({...p,[activeUser.id]:[{task:pendingTask.label,icon:pendingTask.icon,stars:pendingTask.stars,date:new Date().toLocaleDateString(),type:"earn"},...(p[activeUser.id]||[])]}));
+    
+    const currentStars = stars[activeUser.id]||0;
+    const newTotal = currentStars + pendingTask.stars;
+    
+    // Trigger flying stars animation from click position to star counter
+    if(pendingTask.clickX && pendingTask.clickY){
+      setFlyingStars({
+        count: pendingTask.stars,
+        startX: pendingTask.clickX,
+        startY: pendingTask.clickY,
+        totalStars: newTotal
+      });
+    }
+    
+    // Check for milestone achievements
+    const milestones = [10, 25, 50, 100, 250, 500];
+    const reachedMilestone = milestones.find(m => currentStars < m && newTotal >= m);
+    if(reachedMilestone){
+      setTimeout(()=>setMilestone(reachedMilestone), 1000); // Show after stars land
+    }
+    
+    // Store undo data
+    setUndoStack(prev=>[{
+      type:"task",
+      userId:activeUser.id,
+      stars:pendingTask.stars,
+      task:pendingTask
+    },...prev].slice(0,5)); // Keep last 5 actions
+    
+    setStars(p=>({...p,[activeUser.id]:newTotal}));
+    setHistory(p=>({...p,[activeUser.id]:[{task:pendingTask.label,icon:pendingTask.icon,stars:pendingTask.stars,date:new Date().toLocaleDateString(),type:"earn",timestamp:Date.now(),id:Date.now()+"-"+Math.random()},...(p[activeUser.id]||[])]}));
     setBurst(pendingTask.stars); setPendingTask(null);
+    
+    // Check for new achievements
+    setTimeout(() => checkAchievements(activeUser.id), 500);
   };
   const buyItem = (item)=>{
     if(userStars<item.stars) return;
+    // Store undo data
+    setUndoStack(prev=>[{
+      type:"purchase",
+      userId:activeUser.id,
+      stars:item.stars,
+      item:item
+    },...prev].slice(0,5));
+    
     setStars(p=>({...p,[activeUser.id]:p[activeUser.id]-item.stars}));
-    setPurchases(p=>({...p,[activeUser.id]:[{item:item.label,icon:item.icon,stars:item.stars,date:new Date().toLocaleDateString()},...(p[activeUser.id]||[])]}));
+    setPurchases(p=>({...p,[activeUser.id]:[{item:item.label,icon:item.icon,stars:item.stars,date:new Date().toLocaleDateString(),id:Date.now()+"-"+Math.random()},...(p[activeUser.id]||[])]}));
     setConfetti(true); setJustBought(item);
+    
+    // Check achievements (e.g., super saver if they have 100+ stars left)
+    setTimeout(() => checkAchievements(activeUser.id), 500);
   };
   const penalizeUser = (reason)=>{
     const deduct=Math.min(reason.stars,userStars);
+    const histId = Date.now() + "-" + Math.random();
+    
+    // Push to undo stack
+    pushUndo({
+      type:"penalty",
+      userId:activeUser.id,
+      stars:deduct,
+      histId:histId
+    });
+    
     setStars(p=>({...p,[activeUser.id]:(p[activeUser.id]||0)-deduct}));
-    setHistory(p=>({...p,[activeUser.id]:[{task:reason.label,icon:reason.icon,stars:deduct,date:new Date().toLocaleDateString(),type:"penalty"},...(p[activeUser.id]||[])]}));
+    setHistory(p=>({...p,[activeUser.id]:[{task:reason.label,icon:reason.icon,stars:deduct,date:new Date().toLocaleDateString(),type:"penalty",timestamp:Date.now(),id:histId},...(p[activeUser.id]||[])]}));
     setRedFlash(true); setScreen("tasks");
+    showToast(`-${deduct} ⭐`);
+  };
+
+  const undoLastAction = ()=>{
+    if(undoStack.length===0) return;
+    const lastAction=undoStack[0];
+    
+    if(lastAction.type==="task"){
+      // Undo task completion
+      setStars(p=>({...p,[lastAction.userId]:(p[lastAction.userId]||0)-lastAction.stars}));
+      setHistory(p=>({...p,[lastAction.userId]:p[lastAction.userId].slice(1)}));
+    } else if(lastAction.type==="purchase"){
+      // Undo purchase
+      setStars(p=>({...p,[lastAction.userId]:(p[lastAction.userId]||0)+lastAction.stars}));
+      setPurchases(p=>({...p,[lastAction.userId]:p[lastAction.userId].slice(1)}));
+    }
+    
+    setUndoStack(prev=>prev.slice(1));
+    setShowSaved(true); // Show "Action undone!" toast
+    setTimeout(()=>setShowSaved(false),1800);
   };
 
   /* ── settings CRUD — all operate on drafts ── */
@@ -624,12 +1155,6 @@ export default function App(){
     
     if (window.storage) {
       window.storage.set("ra_users", JSON.stringify(updated)).catch(() => {});
-    } else {
-      try {
-        localStorage.setItem("ra_users", JSON.stringify(updated));
-      } catch (e) {
-        console.error("Failed to save avatar", e);
-      }
     }
     
     setAvatarModal(null);
@@ -657,29 +1182,56 @@ export default function App(){
     if(user) return <AvatarModal current={user.avatar} onPick={(av)=>changeAvatar(avatarModal,av)} onClose={()=>setAvatarModal(null)} t={t}/>;
   }
 
+  /* password change modal */
+  if (showPasswordChange) {
+    return <PasswordChangeModal 
+      currentPassword={password}
+      onSuccess={(newPassword) => {
+        setPassword(newPassword);
+        setShowPasswordChange(false);
+        setShowSaved(true);
+      }}
+      onCancel={() => setShowPasswordChange(false)}
+      t={t}
+    />;
+  }
+
   /* password */
   if(pwModal){
     if(pwTarget==="approve"){
       return <PasswordModal icon="👨‍👧" title={t.parentApproval} subtitle={t.approveQ(pendingTask?.label||"",pendingTask?.stars||0)}
         btnConfirm={t.confirm} btnCancel={t.cancel}
+        password={password}
         onSuccess={()=>{setPwModal(false);approveTask();}}
         onCancel={()=>{setPwModal(false);setPendingTask(null);}}/>;
     }
     return <PasswordModal title={t.parentPassword} subtitle={t.enterPassword}
       btnConfirm={t.confirm} btnCancel={t.cancel}
+      password={password}
       onSuccess={()=>{setPwModal(false); pwTarget==="settings"?enterSettings():setScreen(pwTarget);}}
       onCancel={()=>setPwModal(false)}/>;
   }
 
   /* delete confirm */
   if(confirmDel){
+    if(confirmDel.type==="purchase"){
+      return <ConfirmModal
+        title={t.confirmPurchase.replace("{X}",confirmDel.item.stars)}
+        message={`"${confirmDel.item.label}"`}
+        icon="🛍️"
+        yesLabel={t.confirm} 
+        noLabel={t.cancel}
+        onYes={()=>{buyItem(confirmDel.item);setConfirmDel(null);}}
+        onNo={()=>setConfirmDel(null)}
+      />;
+    }
     const labels={
       user: draftUsers?.find(u=>u.id===confirmDel.id)?.name||"?",
       task: draftTasks?.find(x=>x.id===confirmDel.id)?.label||"?",
       shop: draftShop?.find(x=>x.id===confirmDel.id)?.label||"?",
     };
     return <ConfirmModal
-      title={confirmDel.type==="user"?t.deleteChild:t.deleteItem}
+      title={confirmDel.type==="user"?t.deleteChild:confirmDel.type==="child"?t.confirmDelete:t.deleteItem}
       message={`"${labels[confirmDel.type]}"`}
       yesLabel={t.discard||"Delete"} noLabel={t.cancel}
       onYes={()=>{
@@ -709,14 +1261,88 @@ export default function App(){
       {[["tasks",`✅ ${t.tasks}`],["shop",`🛍️ ${t.shop}`],["history",`📜 ${t.history}`]].map(([k,l])=>(
         <button key={k} onClick={()=>setScreen(k)} style={{...S.navTab,...(screen===k?S.navTabActive:{})}}>{l}</button>
       ))}
+      <button 
+        onClick={undoLastAction} 
+        disabled={undoStack.length===0}
+        style={{
+          ...S.penBtn,
+          opacity:undoStack.length===0?0.3:1,
+          cursor:undoStack.length===0?"not-allowed":"pointer",
+          fontSize:18
+        }}
+        title={t.undo}
+      >
+        ⎌
+      </button>
       <button onClick={()=>openProtected("penalize")} style={S.penBtn}>⚠️</button>
     </div>
   );
+  
   const LangSwitch = ()=>(
-    <div style={{display:"flex",gap:8,justifyContent:"center",marginBottom:16,marginTop:14}}>
-      {[["en","EN"],["he","עב"],["ru","РУ"]].map(([code,label])=>(
-        <button key={code} onClick={()=>setLang(code)} style={{...S.langBtn,...(lang===code?S.langBtnActive:{})}}>{label}</button>
-      ))}
+    <div>
+      <button 
+        onClick={()=>setShowLangMenu(!showLangMenu)} 
+        style={{
+          position:"fixed",
+          top:18,
+          left:22,
+          background:"rgba(255,255,255,.38)",
+          border:"none",
+          borderRadius:16,
+          fontSize:24,
+          padding:"6px 12px",
+          cursor:"pointer",
+          boxShadow:"0 2px 8px rgba(0,0,0,.1)",
+          display:"flex",
+          alignItems:"center",
+          gap:4,
+          zIndex:100
+        }}
+      >
+        🌐
+      </button>
+      {showLangMenu&&(
+        <>
+          <div onClick={()=>setShowLangMenu(false)} style={{position:"fixed",inset:0,zIndex:999}}/>
+          <div style={{
+            position:"fixed",
+            top:60,
+            left:22,
+            background:"#fff",
+            borderRadius:16,
+            boxShadow:"0 8px 28px rgba(0,0,0,.2)",
+            padding:8,
+            zIndex:1000,
+            minWidth:160
+          }}>
+            {[["en","English","🇺🇸"],["he","עברית","🇮🇱"],["ru","Русский","🇷🇺"]].map(([code,name,flag])=>(
+              <button 
+                key={code} 
+                onClick={()=>{setLang(code);setShowLangMenu(false);}} 
+                style={{
+                  width:"100%",
+                  padding:"10px 14px",
+                  border:"none",
+                  background:lang===code?"#f0f0f0":"transparent",
+                  borderRadius:10,
+                  cursor:"pointer",
+                  fontSize:15,
+                  fontWeight:lang===code?700:500,
+                  color:"#2d3436",
+                  display:"flex",
+                  alignItems:"center",
+                  gap:10,
+                  textAlign:"left"
+                }}
+              >
+                <span style={{fontSize:20}}>{flag}</span>
+                {name}
+                {lang===code&&<span style={{marginLeft:"auto",color:"#5f27cd"}}>✓</span>}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 
@@ -731,15 +1357,97 @@ export default function App(){
      SCREENS
      ═══════════════════════════════════════════════════════════════════════ */
 
+  /* ── GLOBAL UI OVERLAYS ── */
+  const AchievementNotification = () => {
+    if (!achievementNotif) return null;
+    return (
+      <div style={{
+        position: "fixed",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        zIndex: 2000,
+        background: "#fff",
+        borderRadius: 24,
+        padding: "40px 30px",
+        boxShadow: "0 30px 80px rgba(0,0,0,0.3)",
+        textAlign: "center",
+        animation: "bounce 0.5s ease-out"
+      }}>
+        <div style={{ fontSize: 72, marginBottom: 16 }}>{achievementNotif.icon}</div>
+        <div style={{ fontSize: 24, fontWeight: 800, color: "#2d3436", marginBottom: 8 }}>
+          {t.unlocked}
+        </div>
+        <div style={{ fontSize: 20, color: "#5f27cd", fontWeight: 700 }}>
+          {achievementNotif.name}
+        </div>
+      </div>
+    );
+  };
+
+  const ToastNotification = () => {
+    if (!toastMsg) return null;
+    return (
+      <div style={{
+        position: "fixed",
+        bottom: 80,
+        left: "50%",
+        transform: "translateX(-50%)",
+        zIndex: 2000,
+        background: "rgba(0,0,0,0.85)",
+        color: "#fff",
+        padding: "12px 24px",
+        borderRadius: 20,
+        fontSize: 16,
+        fontWeight: 700,
+        boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
+        animation: "slideUp 0.3s ease-out"
+      }}>
+        {toastMsg}
+      </div>
+    );
+  };
+
+  const UndoButton = () => {
+    if (undoStack.length === 0 || screen !== "tasks") return null;
+    return (
+      <button
+        onClick={performUndo}
+        style={{
+          position: "fixed",
+          bottom: 24,
+          left: "50%",
+          transform: "translateX(-50%)",
+          zIndex: 100,
+          background: "rgba(255,255,255,0.95)",
+          border: "2px solid #5f27cd",
+          borderRadius: 20,
+          padding: "12px 24px",
+          fontSize: 16,
+          fontWeight: 700,
+          color: "#5f27cd",
+          cursor: "pointer",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+          display: "flex",
+          alignItems: "center",
+          gap: 8
+        }}
+      >
+        <span style={{ fontSize: 20 }}>↶</span>
+        {t.undoLastAction}
+      </button>
+    );
+  };
+
   /* ── USER SELECT ── */
   if(screen==="users") return(
     <div style={S.bg}>
+      <GlobalStyles />
       <button onClick={()=>openProtected("settings")} style={S.gearBtn}>⚙️</button>
       <LangSwitch/>
       <div style={S.titleBlock}>
         <div style={{fontSize:58}}>🌟</div>
         <h1 style={S.title}>{t.appTitle}</h1>
-        <p style={S.subtitle}>{t.whoPlaying}</p>
       </div>
       <div style={S.userGrid}>
         {users.map(u=>(
@@ -755,6 +1463,10 @@ export default function App(){
         ))}
       </div>
       {users.length===0&&<p style={{color:"#636e72",fontSize:18,textAlign:"center",marginTop:40}}>{t.noChildren}</p>}
+      
+      {/* Global overlays */}
+      <AchievementNotification />
+      <ToastNotification />
     </div>
   );
 
@@ -763,6 +1475,8 @@ export default function App(){
     <div style={S.bg}>
       {burst>0  &&<StarBurst count={burst} onDone={()=>setBurst(0)}/>}
       {redFlash &&<RedFlash onDone={()=>setRedFlash(false)}/>}
+      {flyingStars&&<FlyingStars count={flyingStars.count} startX={flyingStars.startX} startY={flyingStars.startY} totalStars={flyingStars.totalStars} onDone={()=>setFlyingStars(null)}/>}
+      {milestone&&<MilestoneCelebration milestone={milestone} onDone={()=>setMilestone(null)}/>}
       <Header title={t.doTask}/>
       <NavTabs/>
       <div style={S.content}>
@@ -771,7 +1485,7 @@ export default function App(){
         {tasks.length===0
           ?<p style={S.emptyText}>{t.noTasksHint}</p>
           :<div style={S.grid}>{tasks.map(task=>(
-            <button key={task.id} onClick={()=>requestTask(task)} style={S.taskCard}>
+            <button key={task.id} onClick={(e)=>requestTask(task,e)} style={S.taskCard}>
               <div style={{fontSize:42,marginBottom:4}}>{task.icon}</div>
               <div style={S.taskLabel}>{task.label}</div>
               <div style={S.taskReward}>+{task.stars} ⭐</div>
@@ -779,6 +1493,11 @@ export default function App(){
           ))}</div>
         }
       </div>
+      
+      {/* Global overlays */}
+      <AchievementNotification />
+      <ToastNotification />
+      <UndoButton />
     </div>
   );
 
@@ -794,11 +1513,28 @@ export default function App(){
         <div style={S.grid}>
           {shopItems.map(item=>{
             const ok=userStars>=item.stars;
-            return(<button key={item.id} onClick={()=>ok&&buyItem(item)} disabled={!ok} style={{...S.taskCard,...(!ok?S.disabled:{})}}>
-              <div style={{fontSize:42,marginBottom:4}}>{item.icon}</div>
-              <div style={S.taskLabel}>{item.label}</div>
-              <div style={S.taskReward}>{ok?<span style={{color:"#00b894"}}>⭐ {item.stars}</span>:<span style={{color:"#d63031",fontSize:14}}>🔒 {item.stars} ⭐</span>}</div>
-            </button>);
+            const needed=item.stars-userStars;
+            return(
+              <div key={item.id} style={{position:"relative"}}>
+                <button 
+                  onClick={()=>ok&&setConfirmDel({type:"purchase",item:item})} 
+                  disabled={!ok} 
+                  style={{...S.taskCard,...(!ok?S.disabled:{}),width:"100%"}}
+                >
+                  <div style={{fontSize:42,marginBottom:4}}>{item.icon}</div>
+                  <div style={S.taskLabel}>{item.label}</div>
+                  <div style={S.taskReward}>
+                    {ok
+                      ?<span style={{color:"#00b894"}}>⭐ {item.stars}</span>
+                      :<span style={{color:"#d63031",fontSize:14}}>🔒 {item.stars} ⭐</span>
+                    }
+                  </div>
+                  {/* Badges - styles already have position absolute */}
+                  {ok&&<div style={S.affordBadge}>{t.canAfford}</div>}
+                  {!ok&&needed>0&&needed<=10&&<div style={S.needMoreBadge}>{t.needMore.replace("{X}",needed)}</div>}
+                </button>
+              </div>
+            );
           })}
         </div>
         {shopItems.length===0&&<p style={S.emptyText}>{t.noShopItems}</p>}
@@ -861,113 +1597,190 @@ export default function App(){
       <span style={S.settingsTitle}>⚙️ {t.settings}</span>
       <div style={{width:60}}/>
     </div>
+    
+    {/* Settings Tabs */}
+    <div style={{width:"100%",maxWidth:640,marginTop:16,overflowX:"auto"}}>
+      <div style={{display:"flex",gap:8,padding:"0 4px",minWidth:"fit-content"}}>
+        {[
+          ["general","🌐",t.general],
+          ["children","👨‍👧‍👦",t.childrenTab],
+          ["tasks","📋",t.tasksTab],
+          ["shop","🛍️",t.shopTab],
+          ["security","🔐",t.security]
+        ].map(([tab,icon,label])=>(
+          <button 
+            key={tab} 
+            onClick={()=>setSettingsTab(tab)} 
+            style={{
+              ...S.navTab,
+              flex:"none",
+              padding:"8px 16px",
+              fontSize:15,
+              whiteSpace:"nowrap",
+              ...(settingsTab===tab?S.navTabActive:{})
+            }}
+          >
+            <span style={{marginRight:6}}>{icon}</span>{label}
+          </button>
+        ))}
+      </div>
+    </div>
+
     <div style={S.content}>
 
-      {/* language */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>🌐 {t.language}</h3>
-        <div style={{display:"flex",gap:10}}>
-          {[["en","English"],["he","עברית"],["ru","Русский"]].map(([code,name])=>(
-            <button key={code} onClick={()=>setLang(code)} style={{...S.langBtnBig,...(lang===code?S.langBtnBigActive:{})}}>{name}</button>
+      {/* GENERAL TAB */}
+      {settingsTab==="general"&&(<>
+        {/* language - Duolingo style */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>🌐 {t.language}</h3>
+          <div style={{display:"flex",flexDirection:"column",gap:12}}>
+            {[["en","English","🇺🇸"],["he","עברית","🇮🇱"],["ru","Русский","🇷🇺"]].map(([code,name,flag])=>(
+              <button 
+                key={code} 
+                onClick={()=>setLang(code)} 
+                style={{
+                  width:"100%",
+                  padding:"16px 20px",
+                  border:lang===code?"3px solid #5f27cd":"2px solid #eee",
+                  background:lang===code?"#ede7ff":"#fff",
+                  borderRadius:16,
+                  cursor:"pointer",
+                  fontSize:17,
+                  fontWeight:700,
+                  color:"#2d3436",
+                  display:"flex",
+                  alignItems:"center",
+                  gap:14,
+                  textAlign:"left",
+                  boxShadow:lang===code?"0 4px 14px rgba(95,39,205,.2)":"0 2px 8px rgba(0,0,0,.06)",
+                  transition:"all 0.2s ease"
+                }}
+              >
+                <span style={{fontSize:32}}>{flag}</span>
+                <span style={{flex:1}}>{name}</span>
+                {lang===code&&<span style={{fontSize:24,color:"#5f27cd"}}>✓</span>}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* info */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>📝 {t.howItWorks}</h3>
+          <p style={{color:"#636e72",fontSize:15,margin:0,lineHeight:1.7}}>
+            • {t.howLine1}<br/>• {t.howLine2}<br/>• {t.howLine3}<br/>• {t.howLine4}<br/>• {t.howLine5}<br/>• {t.howLine6}
+          </p>
+        </div>
+      </>)}
+
+      {/* SECURITY TAB */}
+      {settingsTab==="security"&&(<>
+        {/* password change */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>🔐 {t.changePassword}</h3>
+          <p style={{color:"#636e72",fontSize:14,margin:"0 0 12px"}}>Current: {password}</p>
+          <button onClick={()=>setShowPasswordChange(true)} style={S.btnFullPurple}>{t.changePassword}</button>
+        </div>
+      </>)}
+
+      {/* CHILDREN TAB */}
+      {settingsTab==="children"&&(<>
+        {/* add child */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>➕ {t.addChild}</h3>
+          <input placeholder={t.childName} value={newName} onChange={e=>setNewName(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addUser()} style={S.input}/>
+          <p style={S.fieldLabel}>{t.chooseAvatar}</p>
+          <div style={S.chipRow}>{AVATARS.map(a=><button key={a} onClick={()=>setNewAvatar(a)} style={{...S.chipBtn,...(newAvatar===a?S.chipActive:{})}}>{a}</button>)}</div>
+          <button onClick={addUser} style={S.btnFullPurple}>{t.addChildBtn}</button>
+        </div>
+
+        {/* children list */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>👨‍👧‍👦 {t.children}</h3>
+          {draftUsers.length===0&&<p style={S.emptyText}>{t.noChildren}</p>}
+          {draftUsers.map(u=>(
+            <div key={u.id} style={S.row}>
+              <AvatarImg src={u.avatar} size={36} border="2px solid #eee"/>
+              <div style={{flex:1,marginLeft:10}}>
+                <div style={{fontWeight:700,fontSize:17,color:"#2d3436"}}>{u.name}</div>
+                <div style={{fontSize:14,color:"#636e72"}}>⭐ {stars[u.id]||0}</div>
+              </div>
+              <button onClick={()=>setConfirmDel({type:"user",id:u.id})} style={S.delBtn}>🗑️</button>
+            </div>
           ))}
         </div>
-      </div>
+      </>)}
 
-      {/* add child */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>➕ {t.addChild}</h3>
-        <input placeholder={t.childName} value={newName} onChange={e=>setNewName(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addUser()} style={S.input}/>
-        <p style={S.fieldLabel}>{t.chooseAvatar}</p>
-        <div style={S.chipRow}>{AVATARS.map(a=><button key={a} onClick={()=>setNewAvatar(a)} style={{...S.chipBtn,...(newAvatar===a?S.chipActive:{})}}>{a}</button>)}</div>
-        <button onClick={addUser} style={S.btnFullPurple}>{t.addChildBtn}</button>
-      </div>
+      {/* TASKS TAB */}
+      {settingsTab==="tasks"&&(<>
+        {/* add task */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>➕ {t.addTask}</h3>
+          <input placeholder={t.taskPlaceholder} value={newTaskName} onChange={e=>setNewTaskName(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addTask()} style={S.input}/>
+          <p style={S.fieldLabel}>{t.icon}</p>
+          <div style={S.chipRow}>{ICONS.map(ic=><button key={ic} onClick={()=>setNewTaskIcon(ic)} style={{...S.chipBtn,...(newTaskIcon===ic?S.chipActive:{})}}>{ic}</button>)}</div>
+          <p style={S.fieldLabel}>{t.starsReward}</p>
+          <div style={S.starRow}>{STAR_OPTS.map(n=><button key={n} onClick={()=>setNewTaskStars(n)} style={{...S.starPick,...(newTaskStars===n?S.starPickActive:{})}}>{n}</button>)}</div>
+          <button onClick={addTask} style={S.btnFullPurple}>{t.addTaskBtn}</button>
+        </div>
 
-      {/* children list */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>👨‍👧‍👦 {t.children}</h3>
-        {draftUsers.length===0&&<p style={S.emptyText}>{t.noChildren}</p>}
-        {draftUsers.map(u=>(
-          <div key={u.id} style={S.row}>
-            <AvatarImg src={u.avatar} size={36} border="2px solid #eee"/>
-            <div style={{flex:1,marginLeft:10}}>
-              <div style={{fontWeight:700,fontSize:17,color:"#2d3436"}}>{u.name}</div>
-              <div style={{fontSize:14,color:"#636e72"}}>⭐ {stars[u.id]||0}</div>
+        {/* task list */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>📋 {t.currentTasks}</h3>
+          {draftTasks.length===0&&<p style={S.emptyText}>{t.noTasks}</p>}
+          {draftTasks.map(x=>(
+            <div key={x.id}>
+              {editingTask===x.id
+                ?<ItemEditor item={x} labelPlaceholder={t.taskPlaceholder} onSave={(d)=>updateTask(x.id,d)} onCancel={()=>setEditingTask(null)} t={t}/>
+                :<div style={S.row}>
+                  <span style={{fontSize:28,marginRight:10}}>{x.icon}</span>
+                  <div style={{flex:1}}><div style={{fontWeight:700,fontSize:16,color:"#2d3436"}}>{x.label}</div><div style={{fontSize:14,color:"#636e72"}}>+{x.stars} ⭐ {t.perCompletion}</div></div>
+                  <button onClick={()=>setEditingTask(x.id)} style={S.editBtn}>✏️</button>
+                  <button onClick={()=>setConfirmDel({type:"task",id:x.id})} style={S.delBtn}>🗑️</button>
+                </div>
+              }
             </div>
-            <button onClick={()=>setConfirmDel({type:"user",id:u.id})} style={S.delBtn}>🗑️</button>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </>)}
 
-      {/* add task */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>➕ {t.addTask}</h3>
-        <input placeholder={t.taskPlaceholder} value={newTaskName} onChange={e=>setNewTaskName(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addTask()} style={S.input}/>
-        <p style={S.fieldLabel}>{t.icon}</p>
-        <div style={S.chipRow}>{ICONS.map(ic=><button key={ic} onClick={()=>setNewTaskIcon(ic)} style={{...S.chipBtn,...(newTaskIcon===ic?S.chipActive:{})}}>{ic}</button>)}</div>
-        <p style={S.fieldLabel}>{t.starsReward}</p>
-        <div style={S.starRow}>{STAR_OPTS.map(n=><button key={n} onClick={()=>setNewTaskStars(n)} style={{...S.starPick,...(newTaskStars===n?S.starPickActive:{})}}>{n}</button>)}</div>
-        <button onClick={addTask} style={S.btnFullPurple}>{t.addTaskBtn}</button>
-      </div>
+      {/* SHOP TAB */}
+      {settingsTab==="shop"&&(<>
+        {/* add shop item */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>➕ {t.addShopItem}</h3>
+          <input placeholder={t.shopPlaceholder} value={newShopName} onChange={e=>setNewShopName(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addShopItem()} style={S.input}/>
+          <p style={S.fieldLabel}>{t.icon}</p>
+          <div style={S.chipRow}>{ICONS.map(ic=><button key={ic} onClick={()=>setNewShopIcon(ic)} style={{...S.chipBtn,...(newShopIcon===ic?S.chipActive:{})}}>{ic}</button>)}</div>
+          <p style={S.fieldLabel}>{t.priceInStars}</p>
+          <div style={S.starRow}>{STAR_OPTS.map(n=><button key={n} onClick={()=>setNewShopStars(n)} style={{...S.starPick,...(newShopStars===n?S.starPickActive:{})}}>{n}</button>)}</div>
+          <button onClick={addShopItem} style={S.btnFullPurple}>{t.addShopBtn}</button>
+        </div>
 
-      {/* task list */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>📋 {t.currentTasks}</h3>
-        {draftTasks.length===0&&<p style={S.emptyText}>{t.noTasks}</p>}
-        {draftTasks.map(x=>(
-          <div key={x.id}>
-            {editingTask===x.id
-              ?<ItemEditor item={x} labelPlaceholder={t.taskPlaceholder} onSave={(d)=>updateTask(x.id,d)} onCancel={()=>setEditingTask(null)} t={t}/>
-              :<div style={S.row}>
-                <span style={{fontSize:28,marginRight:10}}>{x.icon}</span>
-                <div style={{flex:1}}><div style={{fontWeight:700,fontSize:16,color:"#2d3436"}}>{x.label}</div><div style={{fontSize:14,color:"#636e72"}}>+{x.stars} ⭐ {t.perCompletion}</div></div>
-                <button onClick={()=>setEditingTask(x.id)} style={S.editBtn}>✏️</button>
-                <button onClick={()=>setConfirmDel({type:"task",id:x.id})} style={S.delBtn}>🗑️</button>
-              </div>
-            }
-          </div>
-        ))}
-      </div>
+        {/* shop list */}
+        <div style={S.card}>
+          <h3 style={S.cardTitle}>🛍️ {t.currentShop}</h3>
+          {draftShop.length===0&&<p style={S.emptyText}>{t.noShopItems}</p>}
+          {draftShop.map(x=>(
+            <div key={x.id}>
+              {editingShop===x.id
+                ?<ItemEditor item={x} labelPlaceholder={t.shopPlaceholder} onSave={(d)=>updateShopItem(x.id,d)} onCancel={()=>setEditingShop(null)} t={t}/>
+                :<div style={S.row}>
+                  <span style={{fontSize:28,marginRight:10}}>{x.icon}</span>
+                  <div style={{flex:1}}><div style={{fontWeight:700,fontSize:16,color:"#2d3436"}}>{x.label}</div><div style={{fontSize:14,color:"#636e72"}}>⭐ {x.stars} {t.starsPrice}</div></div>
+                  <button onClick={()=>setEditingShop(x.id)} style={S.editBtn}>✏️</button>
+                  <button onClick={()=>setConfirmDel({type:"shop",id:x.id})} style={S.delBtn}>🗑️</button>
+                </div>
+              }
+            </div>
+          ))}
+        </div>
+      </>)}
 
-      {/* add shop item */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>➕ {t.addShopItem}</h3>
-        <input placeholder={t.shopPlaceholder} value={newShopName} onChange={e=>setNewShopName(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addShopItem()} style={S.input}/>
-        <p style={S.fieldLabel}>{t.icon}</p>
-        <div style={S.chipRow}>{ICONS.map(ic=><button key={ic} onClick={()=>setNewShopIcon(ic)} style={{...S.chipBtn,...(newShopIcon===ic?S.chipActive:{})}}>{ic}</button>)}</div>
-        <p style={S.fieldLabel}>{t.priceInStars}</p>
-        <div style={S.starRow}>{STAR_OPTS.map(n=><button key={n} onClick={()=>setNewShopStars(n)} style={{...S.starPick,...(newShopStars===n?S.starPickActive:{})}}>{n}</button>)}</div>
-        <button onClick={addShopItem} style={S.btnFullPurple}>{t.addShopBtn}</button>
-      </div>
-
-      {/* shop list */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>🛍️ {t.currentShop}</h3>
-        {draftShop.length===0&&<p style={S.emptyText}>{t.noShopItems}</p>}
-        {draftShop.map(x=>(
-          <div key={x.id}>
-            {editingShop===x.id
-              ?<ItemEditor item={x} labelPlaceholder={t.shopPlaceholder} onSave={(d)=>updateShopItem(x.id,d)} onCancel={()=>setEditingShop(null)} t={t}/>
-              :<div style={S.row}>
-                <span style={{fontSize:28,marginRight:10}}>{x.icon}</span>
-                <div style={{flex:1}}><div style={{fontWeight:700,fontSize:16,color:"#2d3436"}}>{x.label}</div><div style={{fontSize:14,color:"#636e72"}}>⭐ {x.stars} {t.starsPrice}</div></div>
-                <button onClick={()=>setEditingShop(x.id)} style={S.editBtn}>✏️</button>
-                <button onClick={()=>setConfirmDel({type:"shop",id:x.id})} style={S.delBtn}>🗑️</button>
-              </div>
-            }
-          </div>
-        ))}
-      </div>
-
-      {/* SAVE */}
-      <button onClick={commitSettings} style={S.saveBtn}><span style={{fontSize:22}}>💾</span> {t.saveChanges}</button>
-
-      {/* info */}
-      <div style={S.card}>
-        <h3 style={S.cardTitle}>📝 {t.howItWorks}</h3>
-        <p style={{color:"#636e72",fontSize:15,margin:0,lineHeight:1.7}}>
-          • {t.howLine1}<br/>• {t.howLine2}<br/>• {t.howLine3}<br/>• {t.howLine4}<br/>• {t.howLine5}<br/>• {t.howLine6}
-        </p>
-      </div>
+      {/* SAVE button - always visible */}
+      {(settingsTab==="children"||settingsTab==="tasks"||settingsTab==="shop")&&(
+        <button onClick={commitSettings} style={S.saveBtn}><span style={{fontSize:22}}>💾</span> {t.saveChanges}</button>
+      )}
     </div>
   </div>);
 
@@ -1006,12 +1819,15 @@ const S = {
   hint:{textAlign:"center",color:"#636e72",fontSize:16,fontWeight:600,marginBottom:4},
   hintSub:{textAlign:"center",color:"#a29bfe",fontSize:14,fontWeight:600,marginBottom:10,marginTop:0},
   grid:{display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:12},
-  taskCard:{background:"#fff",border:"none",borderRadius:20,boxShadow:"0 5px 18px rgba(0,0,0,.11)",padding:"20px 10px 14px",cursor:"pointer",display:"flex",flexDirection:"column",alignItems:"center"},
+  taskCard:{background:"#fff",border:"none",borderRadius:20,boxShadow:"0 5px 18px rgba(0,0,0,.11)",padding:"20px 10px 14px",cursor:"pointer",display:"flex",flexDirection:"column",alignItems:"center",position:"relative"},
   disabled:{opacity:.48,cursor:"not-allowed",filter:"grayscale(.3)"},
   taskLabel:{fontSize:14,fontWeight:700,color:"#2d3436",textAlign:"center",lineHeight:1.3},
   taskReward:{marginTop:6,fontSize:16,fontWeight:800,color:"#e17055"},
 
   purchaseAlert:{background:"linear-gradient(135deg,#00b894,#00cec9)",color:"#fff",borderRadius:16,padding:"13px 18px",textAlign:"center",fontSize:17,fontWeight:700,marginBottom:12,boxShadow:"0 4px 14px rgba(0,184,148,.35)"},
+  
+  affordBadge:{position:"absolute",top:8,right:8,background:"linear-gradient(135deg,#00b894,#00cec9)",color:"#fff",borderRadius:12,padding:"4px 10px",fontSize:11,fontWeight:800,boxShadow:"0 2px 8px rgba(0,184,148,.4)",zIndex:10},
+  needMoreBadge:{position:"absolute",top:8,right:8,background:"linear-gradient(135deg,#ff7675,#d63031)",color:"#fff",borderRadius:12,padding:"4px 10px",fontSize:11,fontWeight:700,boxShadow:"0 2px 8px rgba(214,48,49,.4)",zIndex:10},
 
   emptyText:{color:"#636e72",fontSize:16,textAlign:"center",padding:"14px 0",margin:0},
   histRow:{background:"#fff",borderRadius:14,padding:"11px 14px",display:"flex",alignItems:"center",marginBottom:9,boxShadow:"0 3px 10px rgba(0,0,0,.08)"},
